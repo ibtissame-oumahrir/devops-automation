@@ -17,7 +17,7 @@ spec:
           image: ibtissameoumahrir/devops-integration
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8888
+            - containerPort: 8080
    
            
 ---
