@@ -1,4 +1,6 @@
-apiVersion:  apps/v1
+---
+
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: spring-boot-k8s-deployment
@@ -17,11 +19,11 @@ spec:
           image: ibtissameoumahrir/devops-integration
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8080
+            - containerPort: 8888
             
 ---
 
-apiVersion:  v1
+apiVersion: v1
 kind: Service
 metadata:
   name: springboot-k8ssvc
